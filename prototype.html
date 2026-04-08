@@ -1,0 +1,1474 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wongsakorn Law Office | Fighting For Your Justice</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <style>
+      :root {
+        /* Enhanced Green Palette */
+        --primary: #1b5e20; /* Deep Forest Green - Brand Anchor */
+        --primary-medium: #2e7d32; /* Medium Green - Hover/Active */
+        --primary-light: #4caf50; /* Light Green - Accents */
+        --accent: #c9a227; /* Gold - Premium/CTAs */
+        --accent-hover: #d4af37; /* Gold Light - Hover */
+        --bg-light-green: #e8f5e9; /* Soft Green Background */
+
+        /* Neutral Colors */
+        --text-dark: #1f2937;
+        --text-gray: #4b5563;
+        --text-light: #9ca3af;
+        --bg-white: #ffffff;
+        --bg-light: #f9fafb;
+        --bg-alt: #f3f4f6;
+        --border: #e5e7eb;
+
+        /* Shadows */
+        --shadow:
+          0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        --shadow-lg:
+          0 10px 15px -3px rgba(0, 0, 0, 0.1),
+          0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        color: var(--text-dark);
+        line-height: 1.6;
+        background-color: var(--bg-white);
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-family: "Playfair Display", serif;
+        color: var(--text-dark);
+        line-height: 1.2;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+        transition: 0.3s;
+      }
+      ul {
+        list-style: none;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 14px 28px;
+        font-weight: 600;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-size: 15px;
+        text-align: center;
+      }
+      .btn-primary {
+        background-color: var(--primary);
+        color: white;
+      }
+      .btn-primary:hover {
+        background-color: var(--primary-medium);
+      }
+      .btn-secondary {
+        background-color: var(--accent);
+        color: var(--text-dark);
+      }
+      .btn-secondary:hover {
+        background-color: var(--accent-hover);
+      }
+
+      .section-tag {
+        display: inline-block;
+        background: var(--bg-light-green);
+        color: var(--primary);
+        padding: 6px 16px;
+        border-radius: 20px;
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 16px;
+      }
+
+      .section-title {
+        font-size: 36px;
+        margin-bottom: 12px;
+        color: var(--text-dark);
+      }
+
+      /* Header */
+      header {
+        background: white;
+        box-shadow: var(--shadow);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        padding: 15px 0;
+      }
+      .nav-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .logo {
+        font-family: "Playfair Display", serif;
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--primary);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .nav-links {
+        display: flex;
+        gap: 30px;
+      }
+      .nav-links a {
+        font-weight: 500;
+        font-size: 15px;
+        color: var(--text-dark);
+      }
+      .nav-links a:hover {
+        color: var(--primary);
+      }
+      .header-contact {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+      .header-phone {
+        font-weight: 600;
+        color: var(--primary);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      /* Hero Section */
+      .hero {
+        padding-top: 180px;
+        padding-bottom: 120px;
+        background:
+          linear-gradient(rgba(27, 94, 32, 0.85), rgba(148, 214, 153, 0.75)),
+          url("https://images.unsplash.com/photo-1589829085413-56de8ae18c73?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80");
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+      }
+      .hero h1 {
+        font-size: 56px;
+        margin-bottom: 20px;
+        color: white;
+        font-weight: 500;
+      }
+      .hero h1 span {
+        color: var(--accent);
+      }
+      .hero-subtitle {
+        font-size: 20px;
+        margin-bottom: 30px;
+        opacity: 0.9;
+        max-width: 600px;
+        margin: 0 auto 30px;
+      }
+      .hero-btns {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        margin-top: 30px;
+      }
+
+      /* Stats Bar */
+      .stats-bar {
+        background: var(--bg-light);
+        padding: 40px 0;
+        border-bottom: 1px solid var(--border);
+      }
+      .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        text-align: center;
+      }
+      .stat-item h3 {
+        font-size: 32px;
+        color: var(--primary-medium);
+        margin-bottom: 5px;
+      }
+      .stat-item p {
+        font-size: 14px;
+        color: var(--text-gray);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      /* About Section */
+      .about-section {
+        padding: 80px 0;
+        background: white;
+      }
+      .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: center;
+      }
+      .about-img {
+        border-radius: 8px;
+        box-shadow: var(--shadow-lg);
+      }
+      .about-text p {
+        margin-bottom: 20px;
+        color: var(--text-gray);
+      }
+      .about-list li {
+        margin-bottom: 12px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .about-list i {
+        color: var(--primary);
+      }
+
+      /* Practice Areas */
+      .practice-section {
+        padding: 80px 0;
+        background: var(--bg-light);
+      }
+      .practice-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+        margin-top: 40px;
+      }
+      .practice-card {
+        background: white;
+        padding: 30px;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: var(--shadow);
+        transition: transform 0.3s;
+        border-top: 3px solid var(--primary-medium);
+      }
+      .practice-card:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-lg);
+      }
+      .practice-icon {
+        width: 60px;
+        height: 60px;
+        background: var(--bg-light-green);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 15px;
+        color: var(--primary);
+        font-size: 24px;
+      }
+      .practice-card h4 {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      /* Team Section */
+      .team-section {
+        padding: 80px 0;
+        background: white;
+      }
+      .team-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        margin-top: 40px;
+      }
+      .team-card {
+        background: var(--bg-alt);
+        border-radius: 8px;
+        overflow: hidden;
+        text-align: center;
+      }
+      .team-img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+      }
+      .team-info {
+        padding: 20px;
+      }
+      .team-info h4 {
+        font-size: 20px;
+        margin-bottom: 5px;
+      }
+      .team-role {
+        color: var(--primary-medium);
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 15px;
+      }
+      .team-bio {
+        font-size: 14px;
+        color: var(--text-gray);
+      }
+
+      /* FAQ Section */
+      .faq-section {
+        padding: 80px 0;
+        background: var(--bg-alt);
+      }
+      .faq-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        margin-top: 40px;
+      }
+      .faq-item {
+        background: white;
+        padding: 25px;
+        border-radius: 8px;
+        box-shadow: var(--shadow);
+      }
+      .faq-question {
+        font-weight: 600;
+        font-size: 18px;
+        color: var(--text-dark);
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        align-items: center;
+      }
+      .faq-answer {
+        margin-top: 15px;
+        color: var(--text-gray);
+        display: none;
+      }
+      .faq-item.active .faq-answer {
+        display: block;
+      }
+      .faq-icon {
+        transition: 0.3s;
+      }
+      .faq-item.active .faq-icon {
+        transform: rotate(180deg);
+      }
+
+      /* Testimonials */
+      .testimonials-section {
+        padding: 80px 0;
+        background: var(--bg-light);
+      }
+      .testimonial-card {
+        background: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: var(--shadow);
+        margin-bottom: 20px;
+      }
+      .testimonial-header {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 15px;
+      }
+      .testimonial-avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: #ddd;
+      }
+      .testimonial-name {
+        font-weight: 600;
+      }
+      .testimonial-date {
+        font-size: 13px;
+        color: var(--text-light);
+      }
+      .testimonial-text {
+        font-style: italic;
+        color: var(--text-gray);
+      }
+
+      /* Blog Section */
+      .blog-section {
+        padding: 80px 0;
+        background: white;
+      }
+      .blog-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        margin-top: 40px;
+      }
+      .blog-card {
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: var(--shadow);
+        transition: 0.3s;
+      }
+      .blog-card:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-lg);
+      }
+      .blog-img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+      .blog-content {
+        padding: 20px;
+      }
+      .blog-date {
+        font-size: 12px;
+        color: var(--text-light);
+        margin-bottom: 8px;
+      }
+      .blog-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+        font-family: "Playfair Display", serif;
+      }
+      .blog-excerpt {
+        font-size: 14px;
+        color: var(--text-gray);
+      }
+
+      /* Location Section */
+      .location-section {
+        padding: 80px 0;
+        background: var(--bg-light);
+      }
+      .location-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+        margin-top: 40px;
+        box-shadow: var(--shadow-lg);
+        border-radius: 8px;
+        overflow: hidden;
+      }
+      .map-container {
+        height: 400px;
+        background: #eee;
+      }
+      .map-container iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+      .contact-info-box {
+        background: var(--primary);
+        color: white;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .contact-info-box h3 {
+        color: white;
+        margin-bottom: 20px;
+        font-size: 24px;
+      }
+      .contact-item {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 20px;
+        align-items: flex-start;
+      }
+      .contact-item i {
+        font-size: 20px;
+        margin-top: 4px;
+        color: var(--accent);
+      }
+
+      /* Resources / Dual Forms Section */
+      .resources-section {
+        padding: 80px 0;
+        background: var(--primary-dark);
+        color: white;
+      }
+      .form-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        max-width: 1100px;
+        margin: 0 auto;
+        align-items: stretch; /* Ensures same height */
+      }
+
+      /* Left Box: Download Guide (Light/White) */
+      .download-box {
+        background: white;
+        color: var(--text-dark);
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        text-align: left;
+        position: relative;
+        overflow: hidden;
+      }
+      .download-box::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 6px;
+        background: linear-gradient(90deg, var(--primary), var(--accent));
+      }
+
+      /* Right Box: Contact Us (Dark Green) */
+      .contact-box {
+        background: linear-gradient(
+          135deg,
+          var(--primary) 0%,
+          var(--primary-medium) 100%
+        );
+        color: white;
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        text-align: left;
+        position: relative;
+        overflow: hidden;
+      }
+      .contact-box::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 6px;
+        background: var(--accent);
+      }
+
+      .form-header {
+        margin-bottom: 25px;
+      }
+      .form-header i {
+        font-size: 24px;
+        margin-bottom: 10px;
+        display: block;
+      }
+      .download-box .form-header i {
+        color: var(--primary);
+      }
+      .contact-box .form-header i {
+        color: var(--accent);
+      }
+
+      .form-header h3 {
+        font-size: 24px;
+        margin-bottom: 8px;
+        font-family: "Playfair Display", serif;
+      }
+      .download-box .form-header h3 {
+        color: var(--text-dark);
+      }
+      .contact-box .form-header h3 {
+        color: white;
+      }
+
+      .form-header p {
+        font-size: 14px;
+        color: var(--text-gray);
+        margin: 0;
+      }
+      .contact-box .form-header p {
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      .form-group {
+        margin-bottom: 15px;
+      }
+      .form-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+      }
+
+      .form-input {
+        width: 100%;
+        padding: 12px 15px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        font-size: 14px;
+        transition: 0.3s;
+        background: #f9f9f9;
+      }
+
+      .form-input-light {
+        background: rgba(255, 255, 255, 0.1);
+        border-color: rgba(255, 255, 255, 0.3);
+        color: white;
+      }
+      .form-input-light::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+      }
+
+      .form-input:focus {
+        outline: none;
+        border-color: var(--primary);
+        background: white;
+      }
+      .form-input-light:focus {
+        border-color: var(--accent);
+        background: rgba(255, 255, 255, 0.2);
+      }
+
+      textarea.form-input {
+        resize: vertical;
+        min-height: 100px;
+      }
+
+      /* Footer */
+      footer {
+        background: #111;
+        color: #aaa;
+        padding: 60px 0 20px;
+      }
+      .footer-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        gap: 40px;
+        margin-bottom: 40px;
+      }
+      .footer-col h4 {
+        color: white;
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
+      .footer-col ul li {
+        margin-bottom: 10px;
+      }
+      .footer-col a:hover {
+        color: var(--accent);
+      }
+      .footer-bottom {
+        border-top: 1px solid #333;
+        padding-top: 20px;
+        text-align: center;
+        font-size: 13px;
+      }
+
+      /* Responsive */
+      @media (max-width: 1024px) {
+        .practice-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .team-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .footer-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        .faq-grid {
+          grid-template-columns: 1fr;
+        }
+        .blog-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .location-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 36px;
+        }
+        .stats-grid {
+          grid-template-columns: 1fr 1fr;
+          gap: 20px;
+        }
+        .about-grid {
+          grid-template-columns: 1fr;
+        }
+        .practice-grid {
+          grid-template-columns: 1fr;
+        }
+        .team-grid {
+          grid-template-columns: 1fr;
+        }
+        .blog-grid {
+          grid-template-columns: 1fr;
+        }
+        .footer-grid {
+          grid-template-columns: 1fr;
+        }
+        .nav-links {
+          display: none;
+        }
+        .form-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* Chat Head Pop-up */
+      .chat-head {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 9999;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+
+      .chat-bubble {
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        margin-bottom: 15px;
+        width: 280px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(20px);
+        transition: all 0.3s ease;
+        text-align: left;
+      }
+
+      .chat-head.active .chat-bubble {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+
+      .chat-bubble p {
+        font-size: 14px;
+        color: var(--text-dark);
+        margin-bottom: 15px;
+        line-height: 1.4;
+      }
+
+      .chat-actions {
+        display: flex;
+        gap: 10px;
+      }
+
+      .chat-btn {
+        flex: 1;
+        padding: 10px;
+        border-radius: 6px;
+        text-align: center;
+        font-size: 13px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: 0.2s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+      }
+
+      .chat-btn.line {
+        background: #00c300;
+        color: white;
+      }
+      .chat-btn.line:hover {
+        background: #00a000;
+      }
+
+      .chat-btn.phone {
+        background: var(--primary);
+        color: white;
+      }
+      .chat-btn.phone:hover {
+        background: var(--primary-medium);
+      }
+
+      .chat-icon {
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(
+          135deg,
+          var(--primary) 0%,
+          var(--primary-medium) 100%
+        );
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+        box-shadow: 0 4px 15px rgba(27, 94, 32, 0.4);
+        transition: transform 0.3s;
+      }
+
+      .chat-icon:hover {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container nav-flex">
+        <a href="#" class="logo">
+          <i class="fa-solid fa-scale-balanced"></i> Wongsakorn Law
+        </a>
+        <nav class="nav-links">
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Services</a>
+          <a href="#">Our Team</a>
+          <a href="#">Blog</a>
+          <a href="#">Contact</a>
+        </nav>
+        <div class="header-contact">
+          <a href="tel:0621951661" class="header-phone">
+            <i class="fa-solid fa-phone"></i> 062-195-1661
+          </a>
+          <a href="#" class="btn btn-primary">Free Consultation</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <h1>A Simple Approach to <br /><span>Legal Justice</span></h1>
+        <p class="hero-subtitle">
+          We help make complex legal matters easy and stress-free. Dedicated
+          advocacy for your rights.
+        </p>
+        <div class="hero-btns">
+          <a href="#" class="btn btn-secondary">Hire Us</a>
+          <a
+            href="#contact"
+            class="btn"
+            style="border: 1px solid white; color: white"
+            >Contact Us</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-bar">
+      <div class="container stats-grid">
+        <div class="stat-item">
+          <h3>10+</h3>
+          <p>Years Experience</p>
+        </div>
+        <div class="stat-item">
+          <h3>500+</h3>
+          <p>Cases Won</p>
+        </div>
+        <div class="stat-item">
+          <h3>50M+</h3>
+          <p>Recovered (THB)</p>
+        </div>
+        <div class="stat-item">
+          <h3>98%</h3>
+          <p>Success Rate</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="container about-grid">
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            alt="Attorney discussing with client"
+            class="about-img"
+          />
+        </div>
+        <div class="about-text">
+          <span class="section-tag">About Us</span>
+          <h2 class="section-title">Trusted Legal Partners</h2>
+          <p>
+            At Wongsakorn Law Office, we understand that legal issues can be
+            overwhelming. Our mission is to provide clear, compassionate, and
+            effective legal representation.
+          </p>
+          <p>
+            Unlike large firms where you might become just another case number,
+            we pride ourselves on direct attorney access and personalized
+            attention.
+          </p>
+          <ul class="about-list">
+            <li>
+              <i class="fa-solid fa-check-circle"></i> Direct attorney
+              representation from start to finish
+            </li>
+            <li>
+              <i class="fa-solid fa-check-circle"></i> Responsive communication
+              via modern portals
+            </li>
+            <li>
+              <i class="fa-solid fa-check-circle"></i> Transparent pricing and
+              fees
+            </li>
+            <li>
+              <i class="fa-solid fa-check-circle"></i> Deep knowledge of local
+              Thai law
+            </li>
+          </ul>
+          <a href="#" class="btn btn-primary" style="margin-top: 20px"
+            >Learn More About Us</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="practice-section">
+      <div class="container">
+        <div class="section-header" style="text-align: center">
+          <span class="section-tag">Practice Areas</span>
+          <h2 class="section-title">Comprehensive Legal Services</h2>
+          <p style="color: var(--text-gray)">
+            We handle a wide range of cases with expertise and dedication.
+          </p>
+        </div>
+        <div class="practice-grid">
+          <div class="practice-card">
+            <div class="practice-icon">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h4>Insurance Claims</h4>
+            <p style="font-size: 14px; color: var(--text-gray)">
+              Fighting for fair compensation from insurers.
+            </p>
+          </div>
+          <div class="practice-card">
+            <div class="practice-icon">
+              <i class="fa-solid fa-car-crash"></i>
+            </div>
+            <h4>Car Accidents</h4>
+            <p style="font-size: 14px; color: var(--text-gray)">
+              Representation for injury and property damage.
+            </p>
+          </div>
+          <div class="practice-card">
+            <div class="practice-icon"><i class="fa-solid fa-users"></i></div>
+            <h4>Family Law</h4>
+            <p style="font-size: 14px; color: var(--text-gray)">
+              Compassionate support for family matters.
+            </p>
+          </div>
+          <div class="practice-card">
+            <div class="practice-icon"><i class="fa-solid fa-gavel"></i></div>
+            <h4>Civil Litigation</h4>
+            <p style="font-size: 14px; color: var(--text-gray)">
+              Dispute resolution and contract issues.
+            </p>
+          </div>
+          <div class="practice-card">
+            <div class="practice-icon">
+              <i class="fa-solid fa-user-lock"></i>
+            </div>
+            <h4>Criminal Defense</h4>
+            <p style="font-size: 14px; color: var(--text-gray)">
+              Protecting your rights and freedom.
+            </p>
+          </div>
+          <div class="practice-card">
+            <div class="practice-icon">
+              <i class="fa-solid fa-file-signature"></i>
+            </div>
+            <h4>Contracts</h4>
+            <p style="font-size: 14px; color: var(--text-gray)">
+              Drafting and reviewing legal agreements.
+            </p>
+          </div>
+          <div class="practice-card">
+            <div class="practice-icon">
+              <i class="fa-solid fa-scale-balanced"></i>
+            </div>
+            <h4>Inheritance</h4>
+            <p style="font-size: 14px; color: var(--text-gray)">
+              Estate planning and probate guidance.
+            </p>
+          </div>
+          <div class="practice-card">
+            <div class="practice-icon">
+              <i class="fa-solid fa-building-columns"></i>
+            </div>
+            <h4>Business Law</h4>
+            <p style="font-size: 14px; color: var(--text-gray)">
+              Corporate formation and compliance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="team-section">
+      <div class="container">
+        <div class="section-header" style="text-align: center">
+          <span class="section-tag">Our Team</span>
+          <h2 class="section-title">Meet The Attorneys</h2>
+        </div>
+        <div class="team-grid">
+          <div class="team-card">
+            <img
+              src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+              alt="Attorney Supasit Siri"
+              class="team-img"
+            />
+            <div class="team-info">
+              <h4>Supasit Siri</h4>
+              <div class="team-role">Managing Attorney</div>
+              <p class="team-bio">
+                Founder with over 10 years of experience in insurance and civil
+                litigation.
+              </p>
+            </div>
+          </div>
+          <div class="team-card">
+            <img
+              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+              alt="Attorney Sarah Johnson"
+              class="team-img"
+            />
+            <div class="team-info">
+              <h4>Sarah Johnson</h4>
+              <div class="team-role">Senior Associate</div>
+              <p class="team-bio">
+                Specializing in family law and compassionate client
+                representation.
+              </p>
+            </div>
+          </div>
+          <div class="team-card">
+            <img
+              src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+              alt="Attorney David Chen"
+              class="team-img"
+            />
+            <div class="team-info">
+              <h4>David Chen</h4>
+              <div class="team-role">Litigation Specialist</div>
+              <p class="team-bio">
+                Expert in civil disputes and aggressive courtroom advocacy.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="container">
+        <div class="section-header" style="text-align: center">
+          <span class="section-tag">FAQ</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-grid">
+          <div class="faq-item">
+            <div class="faq-question">
+              How much does it cost to hire a lawyer?
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </div>
+            <div class="faq-answer">
+              We offer a free initial consultation to discuss your case. Many of
+              our cases are handled on a contingency fee basis, meaning you
+              don't pay unless we win.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              How long will my case take?
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </div>
+            <div class="faq-answer">
+              The timeline varies depending on the complexity of the case and
+              court schedules. We strive to resolve matters as efficiently as
+              possible.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              Do you handle cases outside of Bangkok?
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </div>
+            <div class="faq-answer">
+              Yes, we provide nationwide legal services throughout Thailand.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              What should I bring to my first consultation?
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </div>
+            <div class="faq-answer">
+              Please bring any relevant documents, such as contracts, police
+              reports, insurance papers, and identification.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials-section">
+      <div class="container">
+        <div class="section-header" style="text-align: center">
+          <span class="section-tag">Testimonials</span>
+          <h2 class="section-title">What Our Clients Say</h2>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img
+              src="https://ui-avatars.com/api/?name=John+D&background=random"
+              alt="Avatar"
+              class="testimonial-avatar"
+            />
+            <div>
+              <div class="testimonial-name">John Doe</div>
+              <div class="testimonial-date">2 days ago via Google</div>
+            </div>
+          </div>
+          <p class="testimonial-text">
+            "I used Wongsakorn Law for my insurance claim. Very streamlined
+            process. They work as fast as their clients, so downtime is minimal.
+            I would highly recommend."
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog-section">
+      <div class="container">
+        <div class="section-header" style="text-align: center">
+          <span class="section-tag">Blog</span>
+          <h2 class="section-title">Latest News & Insights</h2>
+        </div>
+        <div class="blog-grid">
+          <div class="blog-card">
+            <img
+              src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+              alt="Blog 1"
+              class="blog-img"
+            />
+            <div class="blog-content">
+              <div class="blog-date">April 6, 2026</div>
+              <h4 class="blog-title">Understanding Insurance Claim Denials</h4>
+              <p class="blog-excerpt">
+                Learn the common reasons insurance companies deny claims and how
+                to appeal effectively.
+              </p>
+            </div>
+          </div>
+          <div class="blog-card">
+            <img
+              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+              alt="Blog 2"
+              class="blog-img"
+            />
+            <div class="blog-content">
+              <div class="blog-date">March 28, 2026</div>
+              <h4 class="blog-title">Steps to Take After a Car Accident</h4>
+              <p class="blog-excerpt">
+                A guide on what to do immediately following a traffic collision
+                to protect your rights.
+              </p>
+            </div>
+          </div>
+          <div class="blog-card">
+            <img
+              src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+              alt="Blog 3"
+              class="blog-img"
+            />
+            <div class="blog-content">
+              <div class="blog-date">March 15, 2026</div>
+              <h4 class="blog-title">Family Law: Protecting Your Children</h4>
+              <p class="blog-excerpt">
+                Understanding custody arrangements and how to ensure the best
+                outcome for your family.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="location-section" id="contact">
+      <div class="container">
+        <div class="section-header" style="text-align: center">
+          <span class="section-tag">Contact Us</span>
+          <h2 class="section-title">Visit Our Office</h2>
+        </div>
+        <div class="location-grid">
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1935.5353936817636!2d100.59776431584517!3d13.65253789052963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d66e31f33c94f%3A0xd4b9f1a84e2c122e!2sSamut%20Prakan!5e0!3m2!1sen!2sth!4v1629876543210!5m2!1sen!2sth"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="contact-info-box">
+            <h3>Contact Information</h3>
+            <div class="contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <strong>Office Address</strong><br />
+                89/94 Moo 12 BangKaew, Bangpli,<br />
+                Samut Prakan, Thailand 10540
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <strong>Phone</strong><br />
+                <a href="tel:0621951661" style="color: white">062-195-1661</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <strong>Email</strong><br />
+                <a href="mailto:info@wongsakorn.com" style="color: white"
+                  >info@wongsakorn.com</a
+                >
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fa-brands fa-line"></i>
+              <div>
+                <strong>Line ID</strong><br />
+                @wongsakorn
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="resources-section">
+      <div class="container">
+        <div class="form-grid">
+          <div class="download-box">
+            <div class="form-header">
+              <i class="fa-solid fa-book-open"></i>
+              <h3>Free Legal Guide</h3>
+              <p>Get the answers you need before starting your case.</p>
+            </div>
+            <form>
+              <div class="form-row">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-input"
+                    placeholder="First Name"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-input"
+                    placeholder="Last Name"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-input"
+                  placeholder="Email Address"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="tel"
+                  class="form-input"
+                  placeholder="Phone Number"
+                />
+              </div>
+              <button
+                type="submit"
+                class="btn btn-secondary"
+                style="width: 100%"
+              >
+                Download Guide
+              </button>
+            </form>
+          </div>
+
+          <div class="contact-box">
+            <div class="form-header">
+              <i class="fa-solid fa-envelope"></i>
+              <h3>Contact Us</h3>
+              <p>Have specific questions? Send us a message.</p>
+            </div>
+            <form>
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-input form-input-light"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-input form-input-light"
+                  placeholder="Email Address"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="tel"
+                  class="form-input form-input-light"
+                  placeholder="Phone Number"
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  class="form-input form-input-light"
+                  rows="4"
+                  placeholder="How can we help you?"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="btn btn-primary"
+                style="
+                  width: 100%;
+                  background: var(--accent);
+                  color: var(--text-dark);
+                "
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4>Wongsakorn Law Office</h4>
+            <p style="font-size: 14px; line-height: 1.6">
+              Professional legal services for over 10 years. Dedicated to
+              protecting your rights and delivering justice throughout Thailand.
+            </p>
+            <div style="margin-top: 20px; font-size: 20px">
+              <a href="#" style="margin-right: 15px"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="#" style="margin-right: 15px"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#">Insurance Lawyer</a></li>
+              <li><a href="#">Personal Injury</a></li>
+              <li><a href="#">Family Law</a></li>
+              <li><a href="#">Civil Litigation</a></li>
+              <li><a href="#">Criminal Defense</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">Client Portal</a></li>
+              <li><a href="#">Legal Guides</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact Us</h4>
+            <ul>
+              <li>
+                <i class="fa-solid fa-location-dot"></i> 89/94 Moo 12, Samut
+                Prakan
+              </li>
+              <li><i class="fa-solid fa-phone"></i> 062-195-1661</li>
+              <li><i class="fa-solid fa-envelope"></i> info@wongsakorn.com</li>
+              <li><i class="fa-brands fa-line"></i> @wongsakorn</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            © 2026 Wongsakorn Law Office. All Rights Reserved. |
+            <a href="#">Privacy Policy</a> | <a href="#">Disclaimer</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="chat-head" id="chatHead">
+      <div class="chat-bubble">
+        <p>Need legal help? Chat with us now!</p>
+        <div class="chat-actions">
+          <a
+            href="https://line.me/ti/p/@wongsakorn"
+            target="_blank"
+            class="chat-btn line"
+          >
+            <i class="fa-brands fa-line"></i> Line
+          </a>
+          <a href="tel:0621951661" class="chat-btn phone">
+            <i class="fa-solid fa-phone"></i> Call
+          </a>
+        </div>
+      </div>
+      <div class="chat-icon" onclick="toggleChat()">
+        <i class="fa-solid fa-comment-dots"></i>
+      </div>
+    </div>
+
+    <script>
+      // FAQ Accordion Logic
+      document.querySelectorAll(".faq-question").forEach((item) => {
+        item.addEventListener("click", () => {
+          const parent = item.parentElement;
+          parent.classList.toggle("active");
+        });
+      });
+
+      // Chat Head Toggle Logic
+      function toggleChat() {
+        const chatHead = document.getElementById("chatHead");
+        chatHead.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
